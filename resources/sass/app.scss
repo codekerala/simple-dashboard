@@ -1,0 +1,65 @@
+// Variables
+@import 'variables';
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: $font-family-sans-serif;
+	background: $body-bg;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	color: #484746;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  padding: 15px;
+}
+.container {
+	width: 100%;
+}
+.content {
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.panel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  padding: 15px;
+}
+
+.card {
+	&-row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+	&-item {
+		flex-grow: 1;
+		flex-basis: 33.33%;
+		max-width: 33.33%;
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-top: 16px;
+	}
+	&-inner {
+		padding: 20px;
+		background: #fff;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+	}
+	&-title {
+		padding-bottom: 15px;
+		text-transform: uppercase;
+		color: #5f6d84;
+	}
+	&-value {
+		height: 43px;
+		font-size: 30px;
+	}
+}
